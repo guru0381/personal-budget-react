@@ -1,18 +1,23 @@
-import React from "react";
+import React from 'react';
+import ChartJS from '../ChartJS/ChartJS';
+import D3JSChart from '../D3JSChart/D3JSChart';
 
 
 function HomePage() {
   return (
     <div className="container center">
+        
         <div className="Benefits-of-using-our-tool">
 
             <div className="text-box">
 
+                
                 <section>
                     
+               
                 <h2>Stay on track</h2>
                 <p>
-                    Do you know where  you are spending your money? If you really stop to track it down,
+                    Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
                     app will help you with that!
                 </p>
@@ -87,28 +92,20 @@ function HomePage() {
                 </p>
             
             </div>
-            <div>
-                <section>
-                    <h1>Chart (801370664)</h1>
-                    <p>
-                        <canvas id="myChart" width="800" height="400"></canvas>
-                    </p>
-                </section>
-            </div>
-            <div>
-                <section>
-                <h1>D3JS Chart (801370664)</h1>
-                <p>
-                    <div id="pie-chart"></div>
-                </p>
-            </section>
-        </div>
             
-            
+            <h1>ChartJS - 801370664</h1>
+            <ChartJS/>
+            <h1>D3JSChart - 801370664</h1>
+            <D3JSChart/>
 
         </div>
 
     </div>
+
+            
+            
+           
+           
   );
 }
 
